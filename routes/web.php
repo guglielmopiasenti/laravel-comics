@@ -19,11 +19,11 @@ Route::get('/', function () {
 });
 
 // Movie's route
-Route::get('/', function () {
+Route::get('/movies', function () {
     return view('movies');
 });
 
 // Tv's route
-Route::get('/', function () {
+Route::get('/tv', function () {
     return view('tv');
 });
