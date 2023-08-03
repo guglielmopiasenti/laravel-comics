@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home's route
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// Movie's route
+Route::get('/', function () {
+    return view('movies');
+});
+
+// Tv's route
+Route::get('/', function () {
+    return view('tv');
 });
