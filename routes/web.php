@@ -16,14 +16,14 @@ use Illuminate\Support\Facades\Route;
 // Home's route
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 // Movie's route
 Route::get('/movies', function () {
     return view('movies');
-});
+})->name('movies');
 
 // Tv's route
 Route::get('/tv', function () {
     return view('tv');
-});
+})->name('tv');
