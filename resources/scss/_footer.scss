@@ -1,3 +1,4 @@
+@use 'var' as *;
 #upper-footer {
   background-color: $blue;
   padding: 30px 0;
@@ -9,14 +10,14 @@
   gap: 20px;
   color: white;
 
-  li {
+  .li-footer {
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: smaller;
   }
 
-  img {
+  .img-footer {
       height: 40px;
   }
 }
@@ -24,7 +25,7 @@
 
 /*  */
 #main-footer {
-  background-image: url(src/assets/img/dc-logo-bg.png), url(src/assets/img/footer-bg.jpg);
+  background-image: url(../img/dc-logo-bg.png), url(../img/footer-bg.jpg);
   background-position: 75% 50%, center;
   background-size: auto, cover;
   background-repeat: no-repeat;
