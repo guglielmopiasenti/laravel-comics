@@ -7,7 +7,7 @@
     <title>{{env('APP_NAME')}} | @yield('title')</title>
     {{-- importing assets --}}
     @vite('resources/js/app.js')
-    @yield('scoped-style')
+    @yield('style')
   </head>
   <body>
     {{-- Header --}}
