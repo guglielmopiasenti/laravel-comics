@@ -1,3 +1,6 @@
+@section ('custom-style')
+    @vite('resources/scss/_footer.scss')
+@endsection
 <section id="upper-footer">
   <div class="container">
       <ul class="upper-footer-list">
