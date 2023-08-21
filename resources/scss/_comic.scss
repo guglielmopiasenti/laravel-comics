@@ -1,0 +1,78 @@
+@use '/resources/scss/var' as *;
+*{
+  font-family: $font;
+}
+
+.comic-container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.comic-image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  .comic-image {
+    position: absolute;
+    top: -250px;
+    height: 200px;
+  }
+}
+
+.comic-details {
+  display: flex;
+  gap: 50px;
+
+}
+
+.comic-title-section {
+  .comic-title {
+    font-weight: 700;
+    padding: 50px 0;
+  }
+
+  .comic-price-availability {
+    display: flex;
+    color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    .comic-price, .comic-available, .comic-availability {
+      padding: 5px 25px;
+      background-color: #55BA59;
+    }
+  }
+
+  .comic-description {
+    color: gray;
+  }
+}
+
+.comic-advertisement-card {
+  padding-top: 50px;
+  height: 200px;
+  width: 200px;
+}
+
+.comic-talent-section {
+  background-color: #F6F6F6;
+  .comic-talent-specs {
+    display:flex;
+    gap: 50px;
+
+  }
+
+  .comic-talent {
+    .comic-artists, .comic-writers{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .comic-specs {
+    .comic-series, .comic-us-price, .comic-sale-date{
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+}
