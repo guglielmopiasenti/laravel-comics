@@ -16,9 +16,37 @@
       </div>
       <p>{{$comic['description']}}</p>
     </div>
-    <div></div>
+    <div>
+      <div>
+        <h1>Talent</h1>
+        <div>
+          <div>Art by:</div>
+          <div>
+            {{ implode(', ', $comic['artists']) }}
+          </div>
+        </div>
+        <div>
+          <div>Written by:</div>
+          <div>{{ implode(', ', $comic['writers']) }}</div>
+        </div>
+      </div>
+      <div>
+        <h1>Specs</h1>
+        <div>
+          <div>Series:</div>
+          <div>{{$comic['series']}}</div>
+        </div>
+        <div>
+          <div>US Price:</div>
+          <div>{{$comic['price']}}</div>
+        </div>
+        <div>
+          <div>On Sale Date:</div>
+          <div>{{$comic['sale_date']}}</div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div></div>
 </div>
 
 @endsection
