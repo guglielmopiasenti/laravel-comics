@@ -18,6 +18,20 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+// Comics route
+Route::get('/comics', function() {
+    $products = config('comics');
+    return view('products', compact('products'));
+})->name('comics');
+
+// Comic route
+Route::get('/comic/{index}', function ($index) {
+    $comics = config('comics');
+    $comic = $comics[$index];
+
+    return view('comic', compact('comic'));
+})->name('comic');
+
 // Movie's route
 Route::get('/movies', function () {
     return view('movies');
