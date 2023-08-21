@@ -17,6 +17,20 @@
     top: -250px;
     height: 200px;
   }
+  .comic-info-img {
+    position: absolute;
+    top: -245px;
+    background-color: #05A9D8;
+    z-index: 2;
+    color: white;
+  }
+  .comic-view-gallery {
+    position: absolute;
+    top: -50px;
+    background-color: #05A9D8;
+    color: white;
+    padding: 0 46px;
+  }
 }
 
 .comic-details {
@@ -65,6 +79,11 @@
     .comic-artists, .comic-writers{
       display: flex;
       justify-content: space-between;
+      .artists, .writers {
+        font-size: 12px;
+        width: 50%;
+        color: dodgerblue;
+      }
     }
   }
 

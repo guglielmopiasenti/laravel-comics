@@ -5,7 +5,9 @@
 
 <div class="comic-container">
   <div class="comic-image-wrapper">
+    <div class="comic-info-img">COMIC BOOK</div>
     <img class="comic-image" src="{{ $comic['thumb'] }}" alt="$comic['series']">
+    <div class="comic-view-gallery">VIEW GALLERY</div>
   </div>
   <div class="comic-details">
     <div class="comic-title-section">
@@ -35,13 +37,13 @@
           <h1>Talent</h1>
           <div class="comic-artists">
             <div>Art by:</div>
-            <div>
+            <div class="artists">
               {{ implode(', ', $comic['artists']) }}
             </div>
           </div>
           <div class="comic-writers">
             <div>Written by:</div>
-            <div>{{ implode(', ', $comic['writers']) }}</div>
+            <div class="writers">{{ implode(', ', $comic['writers']) }}</div>
           </div>
         </div>
         <div class="comic-specs">
