@@ -1,10 +1,10 @@
 <ul class="ul-comic">
   @foreach(config('comics') as $comic)
-    <a href="{{url("/comic/$loop->index")}}">
-      <li class="li-comic">
+    <li class="li-comic">
+      <a href="{{url("/comic/$loop->index")}}">
         <img class="img-comic" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
         {{ $comic['series'] }}
-      </li>
-    </a>
+      </a>
+    </li>
   @endforeach
 </ul>
