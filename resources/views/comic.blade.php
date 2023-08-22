@@ -65,7 +65,7 @@
           <tbody>
             <tr class="comic-series">
               <td>Series:</td>
-              <td>{{$comic['series']}}</td>
+              <td class="series">{{$comic['series']}}</td>
             </tr>
             <tr class="comic-us-price">
               <td>US Price:</td>

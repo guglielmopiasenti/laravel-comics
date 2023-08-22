@@ -72,6 +72,7 @@
 
 .comic-advertisement-card {
   padding-top: 50px;
+  color: gray;
 }
 
 .comic-talent-section {
@@ -85,17 +86,18 @@
 
     .comic-talent-table,
     .comic-specs-table {
-      width: 100%;
       border-collapse: collapse;
       thead {
         background-color: #F6F6F6;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid lightgrey;
       }
-
+      .writers, .artists, .series {
+        color: dodgerblue;
+      }
       th, td {
         padding: 8px;
         text-align: left;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid lightgrey;
         font-size: 0.8em; 
       }
     }
