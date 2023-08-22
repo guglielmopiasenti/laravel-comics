@@ -29,40 +29,57 @@
     </div>
   </div>
 </div>
-  <div class="comic-talent-section">
-    <div class="comic-container">
-      <div class="comic-talent-specs">
-
-        <div class="comic-talent">
-          <h1>Talent</h1>
-          <div class="comic-artists">
-            <div>Art by:</div>
-            <div class="artists">
-              {{ implode(', ', $comic['artists']) }}
-            </div>
-          </div>
-          <div class="comic-writers">
-            <div>Written by:</div>
-            <div class="writers">{{ implode(', ', $comic['writers']) }}</div>
-          </div>
-        </div>
-        <div class="comic-specs">
-          <h1>Specs</h1>
-          <div class="comic-series">
-            <span>Series:</span>
-            <span>{{$comic['series']}}</span>
-          </div>
-          <div class="comic-us-price">
-            <span>US Price:</span>
-            <span>{{$comic['price']}}</span>
-          </div>
-          <div class="comic-sale-date">
-            <span>On Sale Date:</span>
-            <span>{{$comic['sale_date']}}</span>
-          </div>
-        </div>
+<div class="comic-talent-section">
+  <div class="comic-container">
+    <div class="comic-talent-specs">
+      <div class="comic-talent">
+        <table class="comic-talent-table">
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h1>Talent</h1>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="comic-artists">
+              <td>Art by:</td>
+              <td class="artists">{{ implode(', ', $comic['artists']) }}</td>
+            </tr>
+            <tr class="comic-writers">
+              <td>Written by:</td>
+              <td class="writers">{{ implode(', ', $comic['writers']) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="comic-specs">
+        <table class="comic-specs-table">
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h1>Specs</h1>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="comic-series">
+              <td>Series:</td>
+              <td>{{$comic['series']}}</td>
+            </tr>
+            <tr class="comic-us-price">
+              <td>US Price:</td>
+              <td>{{$comic['price']}}</td>
+            </tr>
+            <tr class="comic-sale-date">
+              <td>On Sale Date:</td>
+              <td>{{$comic['sale_date']}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  
+</div>
+
 @endsection

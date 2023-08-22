@@ -1,5 +1,5 @@
 @use '/resources/scss/var' as *;
-*{
+* {
   font-family: $font;
 }
 
@@ -17,18 +17,21 @@
     top: -250px;
     height: 200px;
   }
-  .comic-info-img {
-    position: absolute;
-    top: -245px;
-    background-color: #05A9D8;
-    z-index: 2;
-    color: white;
-  }
+
+  .comic-info-img,
   .comic-view-gallery {
     position: absolute;
-    top: -50px;
     background-color: #05A9D8;
     color: white;
+  }
+
+  .comic-info-img {
+    top: -245px;
+    z-index: 2;
+  }
+
+  .comic-view-gallery {
+    top: -50px;
     padding: 0 46px;
   }
 }
@@ -36,62 +39,65 @@
 .comic-details {
   display: flex;
   gap: 50px;
-
 }
 
 .comic-title-section {
-  .comic-title {
+  h3.comic-title {
     font-weight: 700;
     padding: 50px 0;
   }
 
   .comic-price-availability {
     display: flex;
-    color: white;
     width: 100%;
     padding-bottom: 20px;
-    .comic-price, .comic-available, .comic-availability {
+
+    
+    .comic-price,
+    .comic-available,
+    .comic-availability {
       padding: 5px 25px;
       background-color: #55BA59;
+      color: white;
+    }
+    .comic-price {
+      padding-right: 350px;
     }
   }
 
-  .comic-description {
+  p.comic-description {
     color: gray;
   }
 }
 
 .comic-advertisement-card {
   padding-top: 50px;
-  height: 200px;
-  width: 200px;
 }
 
 .comic-talent-section {
   background-color: #F6F6F6;
+
   .comic-talent-specs {
-    display:flex;
+    display: flex;
+    justify-content: space-between;
     gap: 50px;
+    width: 100%;
 
-  }
-
-  .comic-talent {
-    .comic-artists, .comic-writers{
-      display: flex;
-      justify-content: space-between;
-      .artists, .writers {
-        font-size: 12px;
-        width: 50%;
-        color: dodgerblue;
+    .comic-talent-table,
+    .comic-specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      thead {
+        background-color: #F6F6F6;
+        border-bottom: 1px solid grey;
       }
-    }
-  }
 
-  .comic-specs {
-    .comic-series, .comic-us-price, .comic-sale-date{
-      display: flex;
-      justify-content: space-between;
-
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid grey;
+        font-size: 0.8em; 
+      }
     }
   }
 }
